@@ -11,4 +11,9 @@
           class="com.krawa.springapp.RockMusic">
     </bean>
 
+    <bean id="musicPlayer"
+        class="com.krawa.springapp.MusicPlayer">
+        <constructor-arg ref="musicBean"/>
+    </bean>
+
 </beans>
