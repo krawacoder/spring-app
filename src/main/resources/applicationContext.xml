@@ -16,7 +16,8 @@
     <bean id="classicalMusic"
       class="com.krawa.springapp.ClassicalMusic"
       init-method="init"
-      destroy-method="destroy"/>
+      destroy-method="destroy"
+      factory-method="getInstance"/>
     <bean id="rockMusic"
       class="com.krawa.springapp.RockMusic"
       init-method="init"
