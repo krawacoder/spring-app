@@ -13,13 +13,22 @@
 <!--          class="com.krawa.springapp.RockMusic">-->
 <!--    </bean>-->
 
-    <bean id="classicalMusic" class="com.krawa.springapp.ClassicalMusic"/>
-    <bean id="rockMusic" class="com.krawa.springapp.RockMusic"/>
-    <bean id="jazzMusic" class="com.krawa.springapp.JazzMusic"/>
+    <bean id="classicalMusic"
+      class="com.krawa.springapp.ClassicalMusic"
+      init-method="init"
+      destroy-method="destroy"/>
+    <bean id="rockMusic"
+      class="com.krawa.springapp.RockMusic"
+      init-method="init"
+      destroy-method="destroy"/>
+    <bean id="jazzMusic"
+      class="com.krawa.springapp.JazzMusic"
+      init-method="init"
+      destroy-method="destroy"/>
 
     <bean id="musicPlayer"
         class="com.krawa.springapp.MusicPlayer">
-        <property name="music">
+        <property name="musicList">
             <list>
                 <ref bean="classicalMusic"/>
                 <ref bean="rockMusic"/>

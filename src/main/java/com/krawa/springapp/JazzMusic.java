@@ -6,4 +6,12 @@ public class JazzMusic implements Music{
   public String getSong() {
     return "Jazz for everyone";
   }
+
+  public void init() {
+    System.out.println("Initialization jazz");
+  }
+
+  public void destroy() {
+    System.out.println("Destroy jazz");
+  }
 }

@@ -31,11 +31,11 @@ public class MusicPlayer {
     this.volume = volume;
   }
 
-  public List<Music> getMusic() {
+  public List<Music> getMusicList() {
     return musicList;
   }
 
-  public void setMusic(List<Music> musicList) {
+  public void setMusicList(List<Music> musicList) {
     this.musicList = musicList;
   }
 
