@@ -1,5 +1,8 @@
 package com.krawa.springapp;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class JazzMusic implements Music{
 
   @Override

@@ -8,24 +8,25 @@
         http://www.springframework.org/schema/context/spring-context.xsd">
 
     <context:property-placeholder location="classpath:musicPlayer.properties"/>
+    <context:component-scan base-package="com.krawa.springapp"/>
 
 <!--    <bean id="musicBean"-->
 <!--          class="com.krawa.springapp.RockMusic">-->
 <!--    </bean>-->
 
-    <bean id="classicalMusic"
-      class="com.krawa.springapp.ClassicalMusic"
-      init-method="init"
-      destroy-method="destroy"
-      factory-method="getInstance"/>
-    <bean id="rockMusic"
-      class="com.krawa.springapp.RockMusic"
-      init-method="init"
-      destroy-method="destroy"/>
-    <bean id="jazzMusic"
-      class="com.krawa.springapp.JazzMusic"
-      init-method="init"
-      destroy-method="destroy"/>
+<!--    <bean id="classicalMusic"-->
+<!--      class="com.krawa.springapp.ClassicalMusic"-->
+<!--      init-method="init"-->
+<!--      destroy-method="destroy"-->
+<!--      factory-method="getInstance"/>-->
+<!--    <bean id="rockMusic"-->
+<!--      class="com.krawa.springapp.RockMusic"-->
+<!--      init-method="init"-->
+<!--      destroy-method="destroy"/>-->
+<!--    <bean id="jazzMusic"-->
+<!--      class="com.krawa.springapp.JazzMusic"-->
+<!--      init-method="init"-->
+<!--      destroy-method="destroy"/>-->
 
     <bean id="musicPlayer"
         class="com.krawa.springapp.MusicPlayer">
